@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "f82629f4-6afb-42be-a3fe-5d11f19dd1dc",
+		"name": "Self Health",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23408279"
+	},
+	"item": [
+		{
+			"name": "Rumah Sakit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/selfHealth-api/data_rumahsakit.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"selfHealth-api",
+						"data_rumahsakit.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kamar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/selfHealth-api/data_kamar.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"selfHealth-api",
+						"data_kamar.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pasien",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/selfHealth-api/data_pasien.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"selfHealth-api",
+						"data_pasien.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pasien Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama",
+							"value": "John Bambang",
+							"type": "text"
+						},
+						{
+							"key": "ttl",
+							"value": "Bali, 22 Februari 1955",
+							"type": "text"
+						},
+						{
+							"key": "jenis_kelamin",
+							"value": "L",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "Sleman, Yogyakarta",
+							"type": "text"
+						},
+						{
+							"key": "keluhan",
+							"value": "Sakit Kepala",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/selfHealth-api/create_pasien.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"selfHealth-api",
+						"create_pasien.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pasien Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "Rama Dhang",
+							"type": "text"
+						},
+						{
+							"key": "ttl",
+							"value": "Bali, 22 Februari 1955",
+							"type": "text"
+						},
+						{
+							"key": "jenis_kelamin",
+							"value": "L",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "Sleman, Yogyakarta",
+							"type": "text"
+						},
+						{
+							"key": "keluhan",
+							"value": "Sakit Kepala",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/selfHealth-api/update_pasien.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"selfHealth-api",
+						"update_pasien.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pasien Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/selfHealth-api/delete_pasien.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"selfHealth-api",
+						"delete_pasien.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
