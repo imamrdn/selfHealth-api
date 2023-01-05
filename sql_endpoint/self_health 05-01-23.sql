@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 26, 2022 at 08:47 PM
+-- Generation Time: Jan 05, 2023 at 08:56 AM
 -- Server version: 8.0.31-0ubuntu0.20.04.1
 -- PHP Version: 7.4.3
 
@@ -53,22 +53,25 @@ INSERT INTO `kamar` (`id`, `nama`, `deskripsi`) VALUES
 
 CREATE TABLE `pasien` (
   `id` int NOT NULL,
+  `nomor_pasien` varchar(255) NOT NULL,
   `nama` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `ttl` varchar(100) NOT NULL,
   `jenis_kelamin` varchar(50) NOT NULL,
   `alamat` varchar(255) NOT NULL,
-  `keluhan` varchar(255) NOT NULL
+  `keluhan` varchar(255) NOT NULL,
+  `kamar` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `pasien`
 --
 
-INSERT INTO `pasien` (`id`, `nama`, `ttl`, `jenis_kelamin`, `alamat`, `keluhan`) VALUES
-(1, 'John Doe', 'Jakarta, 13 Januari 1988', 'L', 'Sleman, Yogyakarta', 'Flu dan Batuk'),
-(2, 'Inna Malika', 'Bogor, 17 Agustus 1990', 'P', 'Kotagede, Yogyakarta', 'Pusing Kepala'),
-(3, 'Alex Suranto', 'Surabaya, 23 Juli 1978', 'L', 'Malioboro, Yogyakarta', 'Badan pegal-pegal'),
-(4, 'Mas Laut', 'Yogyakarta, 25 Desember 2000', 'L', 'Godean, Yogyakarta', 'Lemas tak berdaya');
+INSERT INTO `pasien` (`id`, `nomor_pasien`, `nama`, `ttl`, `jenis_kelamin`, `alamat`, `keluhan`, `kamar`) VALUES
+(1, 'A2254', 'John Doe', 'Jakarta, 13 Januari 1988', 'L', 'Sleman, Yogyakarta', 'Flu dan Batuk', 'Kamar Kelas VVIP'),
+(2, 'A2255', 'Inna Malika', 'Bogor, 17 Agustus 1990', 'P', 'Kotagede, Yogyakarta', 'Pusing Kepala', 'Kamar Kelas VVIP'),
+(3, 'A2256', 'Alex Suranto', 'Surabaya, 23 Juli 1978', 'L', 'Malioboro, Yogyakarta', 'Badan pegal-pegal', 'Kamar Kelas 1'),
+(4, 'A2257', 'Mas Laut', 'Yogyakarta, 25 Desember 2000', 'L', 'Godean, Yogyakarta', 'Lemas tak berdaya', 'Kamar Kelas 2'),
+(6, 'A44532', 'Happy asmara', 'Bali, 22 Februari 1955', 'P', 'Berbah, Yogyakarta', 'Sakit Kepala', 'Kamar Kelas VVIP');
 
 -- --------------------------------------------------------
 
@@ -130,7 +133,7 @@ ALTER TABLE `kamar`
 -- AUTO_INCREMENT for table `pasien`
 --
 ALTER TABLE `pasien`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `rumahsakit`

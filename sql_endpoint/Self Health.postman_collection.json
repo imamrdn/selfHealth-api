@@ -72,18 +72,23 @@
 					"mode": "urlencoded",
 					"urlencoded": [
 						{
+							"key": "nomor_pasien",
+							"value": "A2234",
+							"type": "text"
+						},
+						{
 							"key": "nama",
-							"value": "John Bambang",
+							"value": "Yeni Inka",
 							"type": "text"
 						},
 						{
 							"key": "ttl",
-							"value": "Bali, 22 Februari 1955",
+							"value": "Surabaya, 22 Februari 1955",
 							"type": "text"
 						},
 						{
 							"key": "jenis_kelamin",
-							"value": "L",
+							"value": "P",
 							"type": "text"
 						},
 						{
@@ -93,14 +98,13 @@
 						},
 						{
 							"key": "keluhan",
-							"value": "Sakit Kepala",
+							"value": "Cidro",
 							"type": "text"
 						},
 						{
-							"key": "",
-							"value": "",
-							"type": "text",
-							"disabled": true
+							"key": "kamar",
+							"value": "Kamar Kelas VIP",
+							"type": "text"
 						}
 					]
 				},
