@@ -10,7 +10,7 @@
     $keluhan        = $_POST['keluhan'];
     $kamar          = $_POST['kamar'];
     
-    $query  = "INSERT INTO pasien(nama, ttl, jenis_kelamin, alamat, keluhan) VALUES ('$nama', '$ttl', '$jenis_kelamin', '$alamat', '$keluhan')";
+    $query  = "INSERT INTO pasien(nomor_pasien, nama, ttl, jenis_kelamin, alamat, keluhan, kamar) VALUES ('$nomor_pasien', '$nama', '$ttl', '$jenis_kelamin', '$alamat', '$keluhan', '$kamar')";
     $sql    = mysqli_query($db_connect, $query);
 
     if ($sql) {
