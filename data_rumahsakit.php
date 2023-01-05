@@ -11,7 +11,7 @@
         while ($row = mysqli_fetch_array($sql)) {
             array_push($result, array(
                 'id'        => $row['id'],
-                'name'      => $row['name'],
+                'nama'      => $row['nama'],
                 'alamat'    => $row['alamat'],
                 'kota'      => $row['kota']
             ));

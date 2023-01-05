@@ -11,11 +11,13 @@
         while ($row = mysqli_fetch_array($sql)) {
             array_push($result, array(
                 'id'            => $row['id'],
+                'nomor_pasien'  => $row['nomor_pasien'],
                 'nama'          => $row['nama'],
                 'ttl'           => $row['ttl'],
                 'jenis_kelamin' => $row['jenis_kelamin'],
                 'alamat'        => $row['alamat'],
-                'keluhan'       => $row['keluhan']
+                'keluhan'       => $row['keluhan'],
+                'kamar'         => $row['kamar']
             ));
         }
 
